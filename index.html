@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ammar Guerrida | Full Stack Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">Ammar Guerrida</a>
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-overlay" id="navOverlay"></div>
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fas fa-moon"></i>
+        </button>
+        <a href="#contact" class="btn btn-primary">Contact Us</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <span class="hero-badge">Available for freelance work</span>
+        <h1 class="hero-title">Hi, I'm <span class="gradient-text">Ammar Guerrida</span></h1>
+        <p class="hero-subtitle">Full Stack Web Developer</p>
+        <p class="hero-desc">
+          I build modern, scalable web applications with clean code and great user experiences.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+        <div class="hero-social">
+          <a href="https://github.com/Ammar-Guerrida" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="mailto:ammarguerrida7@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://wa.me/213672364227" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-shape"></div>
+        <div class="hero-code">
+          <pre><code><span class="code-kw">const</span> <span class="code-fn">developer</span> = {<br>  name: <span class="code-str">"Ammar Guerrida"</span>,<br>  role: <span class="code-str">"Full Stack Developer"</span>,<br>  skills: [<span class="code-str">"React"</span>, <span class="code-str">"Node.js"</span>, <span class="code-str">"Python"</span>],<br>  available: <span class="code-bool">true</span><br>};</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-desc">Some things I've built</p>
+      </div>
+      <div class="projects-grid" id="projectsGrid">
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-desc">A bit about myself</p>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            I'm a passionate Full Stack Web Developer with experience building modern web applications.
+            I love turning complex problems into simple, beautiful, and intuitive solutions.
+          </p>
+          <p>
+            When I'm not coding, you'll find me exploring new technologies, contributing to open source,
+            or working on side projects.
+          </p>
+          <div class="about-skills">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Tailwind CSS</span>
+            <span class="skill-tag">React.js</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Express.js</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">TypeScript</span>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-number" data-target="2">0</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="15">0</span>
+            <span class="stat-label">Projects Done</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="15">0</span>
+            <span class="stat-label">Happy Clients</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-desc">Have a project? Let's talk about it.</p>
+      </div>
+      <div class="contact-content">
+        <form class="contact-form" id="contactForm" action="https://formsubmit.co/ammarguerrida7@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New message from portfolio">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <div class="form-group">
+            <input type="text" id="formName" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" id="formEmail" name="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <textarea id="formMessage" name="message" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+        </form>
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:ammarguerrida7@gmail.com">ammarguerrida7@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-github"></i>
+            <a href="https://github.com/Ammar-Guerrida" target="_blank">github.com/Ammar-Guerrida</a>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-whatsapp"></i>
+            <a href="https://wa.me/213672364227" target="_blank">+213 672 364 227</a>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-telegram"></i>
+            <a href="https://t.me/+213672364227" target="_blank">+213 672 364 227</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Ammar Guerrida. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="https://github.com/Ammar-Guerrida" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="mailto:ammarguerrida7@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://wa.me/213672364227" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </footer>
+
+      <button id="scrollTop" class="scroll-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+<script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
